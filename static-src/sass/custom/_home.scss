@@ -7,3 +7,42 @@
   letter-spacing: 0;
   color: white;
 }
+
+
+// Projects gallery
+.projects-gallery {
+  .project {
+    &:hover .project-logo {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
+    .project-logo {
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+      -webkit-filter: grayscale(1);
+      filter: gray;
+      filter: grayscale(1);
+
+      transition: .5s ease-in-out;
+      // background-color: pink;
+    }
+    .project-owner {
+      margin: 20px auto;
+      text-align: center;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+
+        &:hover {
+          border: 2px solid $primary-color;
+        }
+      }
+    }
+  }
+}
